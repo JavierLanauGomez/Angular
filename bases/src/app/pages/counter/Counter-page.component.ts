@@ -4,14 +4,10 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-counterpage',
-  template: `
-    <h1>Counter:{{counter}}</h1>
-    <p>Counter page</p>
-    <button (click)="increaseby(1)">+1</button>
-    <button (click)="increaseby(5)">+5</button>
-    <button (click)="increaseby(10)">+10</button>
-    <button (click)="resetcounter(100)">+10</button>
-  `
+
+  templateUrl: './Counter-page.componets.html',
+  styleUrls: ['./Counter-page.components.css']
+
 })
 export class CounterpageComponent {
 

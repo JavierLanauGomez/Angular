@@ -1,6 +1,7 @@
-import { Routes } from '@angular/router';
-import { CounterpageComponent } from './pages/Counter-page.component';
 
+import { Routes } from '@angular/router';
+import { CounterpageComponent } from './pages/counter/Counter-page.component';
+import { HeroPageComponent } from './pages/hero/Hero-Page.Component';
 
 
 
@@ -10,6 +11,8 @@ path:'',
 component: CounterpageComponent
 
 },
+
+
 ];
 
 
