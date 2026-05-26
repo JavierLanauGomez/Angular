@@ -5,8 +5,8 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-counterpage',
 
-  templateUrl: './Counter-page.componets.html',
-  styleUrls: ['./Counter-page.components.css']
+  templateUrl: './counter.page.componets.html',
+  styleUrls: ['./counter.page.components.css']
 
 })
 export class CounterpageComponent {
