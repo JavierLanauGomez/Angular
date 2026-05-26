@@ -1,7 +1,7 @@
 
 import { Routes } from '@angular/router';
 import { CounterpageComponent } from './pages/counter/counter.page.components';
-
+import { HeroPageComponent } from './pages/hero/hero-page.components';
 
 
 
