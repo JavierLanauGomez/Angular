@@ -1,6 +1,8 @@
 import { Component, signal } from '@angular/core';
 
+
 @Component({
+  standalone: true,
   selector: 'app-heropage',
   templateUrl: './hero-page.components.html',
   styleUrls: ['./hero-page.components.css']

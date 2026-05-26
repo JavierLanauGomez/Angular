@@ -12,7 +12,7 @@ component: CounterpageComponent
 
 },
  {
-    path: '/hero',
+    path: 'hero',
     component: HeroPageComponent
   }
 

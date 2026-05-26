@@ -3,11 +3,10 @@
 import { Component } from '@angular/core';
 
 @Component({
+  standalone: true,
   selector: 'app-counterpage',
-
   templateUrl: './counter.page.componets.html',
   styleUrls: ['./counter.page.components.css']
-
 })
 export class CounterpageComponent {
 
