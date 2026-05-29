@@ -1,5 +1,3 @@
-
-
 <h1> hola dragonball</h1>
 
 <hr>
@@ -15,11 +13,22 @@
     </div>
 
     <div class="col-12 col-sm-6">
-      <ol>
-        <li>Goku</li>
-        <li>Vegeta</li>
-        <li>Gohan</li>
-      </ol>
+      <ul>
+
+
+
+        @for (character of characters(); track character.id; let index = $index) {
+         @if (character.powerLevel > 0){
+          <li>{{ index +1}}-{{ character.name }} - {{ character.powerLevel }}</li>
+          <strong [class.text-danger] = "character.powerLevel > 9000">
+            <strong [class.text-info] = "character.powerLevel <= 9000">
+              ({{character.powerLevel}}) </strong>
+          </strong>
+
+        }
+        }
+
+      </ul>
     </div>
 
   </section>
