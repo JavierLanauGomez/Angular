@@ -6,10 +6,21 @@
   <section class="row justify-content-center">
 
     <div class="col-12 col-sm-6">
-      <h3>Agregar:</h3>
-      <input type="text" class="form-control" placeholder="Nombre">
-      <input type="text" class="form-control mt-3" placeholder="Poder">
-      <button class="btn btn-primary mt-3">Agregar</button>
+      <h3>Agregar: {{ newName() }}</h3>
+
+      <input type="text"
+        class="form-control"
+        placeholder="Nombre"
+        [value]="newName()"
+        (input)="newName.set($any($event.target).value)">
+
+      <input type="number"
+        class="form-control mt-3"
+        placeholder="Poder"
+        [value]="newPowerLevel()"
+        (input)="newPowerLevel.set(+$any($event.target).value)">
+
+      <button class="btn btn-primary mt-3" (click)="addCharacter()">Agregar</button>
     </div>
 
     <div class="col-12 col-sm-6">
